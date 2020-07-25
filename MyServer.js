@@ -3,7 +3,7 @@ var fs = require("fs");
 
 // cria o servidor e sobe na porta 8081
 http.createServer(function(request, response){
-    fs.readFile("index.html", function(erro, conteudo){
+    fs.readFile("src/index.html", function(erro, conteudo){
         if(erro)
             console.log(erro);
         else
